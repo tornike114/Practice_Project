@@ -78,8 +78,6 @@ public class BasketTest extends ChromeRunner {
         basketsteps.save_sum_price();
         double updated_price = basketsteps.price_in_cart * basketsteps.quantity_in_cart;
         assertEquals(basketsteps.summed_price,updated_price);
-        System.out.println(basketsteps.summed_price);
-        System.out.println(updated_price);
     }
 
 }
