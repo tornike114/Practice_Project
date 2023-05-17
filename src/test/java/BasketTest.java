@@ -71,13 +71,26 @@ public class BasketTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
-        basketsteps.click_cart();
-        basketsteps.save_price();
-        basketsteps.increase_quantity();
-        basketsteps.save_quantity();
-        basketsteps.save_sum_price();
-        double updated_price = basketsteps.price_in_cart * basketsteps.quantity_in_cart;
+        basketsteps.click_cart()
+                .save_price()
+                .increase_quantity()
+                .save_sum_price();
+        double updated_price = basketsteps.price_in_cart * 2;
         assertEquals(basketsteps.summed_price,updated_price);
     }
+    /*@Test
+    public void check_decreased_quantity(){
+        home_basket.click_search()
+                .srch_item(srch_product)
+                .srch_item_click()
+                .addtocart_click();
+        basketsteps.click_cart()
+                .save_price()
+                .increase_quantity()
+                *//*.save_quantity()*//*
+                .save_sum_price();
+        double updated_price = basketsteps.price_in_cart *2;
+        assertEquals(basketsteps.summed_price,updated_price);
+    }*/
 
 }

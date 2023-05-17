@@ -15,10 +15,6 @@ public class Basketsteps extends BasketPage {
         cart_plus_btn.click();
         return this;
     }
-    public Basketsteps save_quantity() {
-        quantity_in_cart = Double.parseDouble(quantity_input.getValue());
-        return this;
-    }
     public Basketsteps save_sum_price(){
         summed_price = Double.parseDouble(sum_price.getText());
         return this;

@@ -20,6 +20,6 @@ public class BasketPage {
     sum_price = $(".fullPriceFor");
 
    public Double price_in_cart,
-           summed_price,
-           quantity_in_cart;
+           summed_price;
+
 }
