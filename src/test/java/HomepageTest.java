@@ -35,6 +35,7 @@ public class HomepageTest extends ChromeRunner {
         homepage.srch_item(srch_product);
         homepage.srch_item_click();
         homepage.addtocart_click();
+        homepage.wait_add_cart_msg();
         assertTrue(homepage.addtocart_msg.is(Condition.visible));
     }
 

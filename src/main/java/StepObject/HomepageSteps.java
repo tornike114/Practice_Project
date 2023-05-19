@@ -25,5 +25,9 @@ public class HomepageSteps extends HomepagePage {
         addtocart_msg.shouldBe(Condition.visible,Duration.ofMillis(3000));
         return this;
     }
+    public HomepageSteps wait_add_cart_msg(){
+        addtocart_msg.shouldBe(Condition.visible,Duration.ofMillis(3000));
+        return this;
+    }
 
 }

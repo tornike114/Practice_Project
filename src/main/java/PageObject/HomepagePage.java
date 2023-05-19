@@ -13,6 +13,7 @@ public class HomepagePage {
     click_search_icon = $(".search_button"),
     srch_pg_input = $(".search_result"),
     cart_icon = $(by("onclick","updateCartItemColor(1435)")),
+
     addtocart_msg = $(byText("პროდუქტი წარმატებით დაემატა კალათაში"));
 
 }
