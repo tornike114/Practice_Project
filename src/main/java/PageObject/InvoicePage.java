@@ -9,7 +9,10 @@ import static com.codeborne.selenide.Selenide.*;
 public class InvoicePage {
     public SelenideElement
     invoice_send_btn = $("#btn2"),
-    required_filed_red = $(by("style","border: 1px solid red;")),
     company_name_input = $(by("name","name")),
-    personal_id_input = $(by("name","personalId"));
+    companyId_input = $(by("name","personalId")),
+    company_address_input = $(byName("address")),
+    comapany_phone_input = $(byName("phone")),
+    date_field = $(byName("date")),
+    email_field = $(byName("email"));
 }
