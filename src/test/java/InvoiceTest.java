@@ -188,7 +188,6 @@ public class InvoiceTest extends ChromeRunner {
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.setvalue_companyPhone(companyID_more_digits);
-        sleep(3000);
         assertNotSame(invoiceSteps.comapany_phone_input.getValue(),companyID_more_digits);
     }
     @Test /*id 34*/
@@ -216,8 +215,73 @@ public class InvoiceTest extends ChromeRunner {
                 .setvalue_datereceive(srch_cat)
                 .click_send();
         assertTrue(invoiceSteps.date_field.has(Condition.attribute("style")));
-        System.out.println(invoiceSteps.date_field);
     }
+    @Test /*id 36*/
+    public void checking_dateReceive_correct_symbols(){
+        home_invoice.click_search()
+                .srch_item(srch_product)
+                .srch_item_click()
+                .addtocart_click();
+        basket_invoice.click_cart()
+                .cart_continue_click();
+        invoiceSteps.click_send()
+                .setvalue_datereceive(companyID_text)
+                .click_send();
+        assertFalse(invoiceSteps.comapany_phone_input.getTagName().equalsIgnoreCase("style"));
+    }
+    @Test /*id 37*/
+    public void checking_email_field_correct_text(){
+        home_invoice.click_search()
+                .srch_item(srch_product)
+                .srch_item_click()
+                .addtocart_click();
+        basket_invoice.click_cart()
+                .cart_continue_click();
+        invoiceSteps.click_send()
+                .setvalue_email(test_email)
+                .click_send();
+        assertFalse(invoiceSteps.email_field.getTagName().equalsIgnoreCase("style"));
+    }
+    @Test /*id 38*/
+    public void checking_email_field_incorrect_text(){
+        home_invoice.click_search()
+                .srch_item(srch_product)
+                .srch_item_click()
+                .addtocart_click();
+        basket_invoice.click_cart()
+                .cart_continue_click();
+        invoiceSteps.click_send()
+                .setvalue_email(incorrect_email)
+                .click_send();
+        assertTrue(invoiceSteps.email_field.has(Condition.attribute("style")));
+    }
+    @Test /*id 39*/
+    public void checking_email_field_incorrect_text1(){
+        home_invoice.click_search()
+                .srch_item(srch_product)
+                .srch_item_click()
+                .addtocart_click();
+        basket_invoice.click_cart()
+                .cart_continue_click();
+        invoiceSteps.click_send()
+                .setvalue_email(incorrect_email1)
+                .click_send();
+        assertTrue(invoiceSteps.email_field.has(Condition.attribute("style")));
+    }
+    @Test /*id 40*/
+    public void checking_email_field_incorrect_text2(){
+        home_invoice.click_search()
+                .srch_item(srch_product)
+                .srch_item_click()
+                .addtocart_click();
+        basket_invoice.click_cart()
+                .cart_continue_click();
+        invoiceSteps.click_send()
+                .setvalue_email(incorrect_email2)
+                .click_send();
+        assertTrue(invoiceSteps.email_field.has(Condition.attribute("style")));
+    }
+
 
 
 

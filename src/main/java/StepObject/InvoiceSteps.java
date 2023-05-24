@@ -37,6 +37,10 @@ public class InvoiceSteps extends InvoicePage {
         date_field.setValue(text2);
         return this;
     }
+    public InvoiceSteps setvalue_email(String text2){
+        email_field.setValue(text2);
+        return this;
+    }
 
 
 

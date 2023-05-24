@@ -7,6 +7,10 @@ public interface InvoiceData {
     companyID_less_digits = "12345678",
     companyID_more_digits = "1234567891",
     companyID_correct_digits = "123456789",
+    test_email = "test@gmail.com",
+    incorrect_email = "test.gmail.com",
+    incorrect_email1 = "test@gmail",
+    incorrect_email2 = "test.gmail@",
     srch_cat = "კატა";
 
 }
