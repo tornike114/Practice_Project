@@ -25,6 +25,18 @@ public class InvoiceSteps extends InvoicePage {
         companyId_input.setValue(text);
         return this;
     }
+    public InvoiceSteps setvalue_companyAddress(String text1){
+        company_address_input.setValue(text1);
+        return this;
+    }
+    public InvoiceSteps setvalue_companyPhone(String text1){
+        comapany_phone_input.setValue(text1);
+        return this;
+    }
+    public InvoiceSteps setvalue_datereceive(String text2){
+        date_field.setValue(text2);
+        return this;
+    }
 
 
 

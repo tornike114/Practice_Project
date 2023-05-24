@@ -10,7 +10,7 @@ public class InvoicePage {
     public SelenideElement
     invoice_send_btn = $("#btn2"),
     company_name_input = $(by("name","name")),
-    companyId_input = $(by("name","personalId")),
+    companyId_input = $(by("placeholder","საიდენტიფიკაციო კოდი")),
     company_address_input = $(byName("address")),
     comapany_phone_input = $(byName("phone")),
     date_field = $(byName("date")),
