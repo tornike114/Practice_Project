@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class InvoicePage {
     public SelenideElement
     invoice_send_btn = $("#btn2"),
-    company_name_input = $(by("name","name")),
+    company_name_input = $(byName("name")),
     companyId_input = $(by("placeholder","საიდენტიფიკაციო კოდი")),
     company_address_input = $(byName("address")),
     comapany_phone_input = $(byName("phone")),

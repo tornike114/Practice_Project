@@ -16,8 +16,7 @@ public class BasketPage {
     header_quantity = $(byText("რაოდენობა")),
     header_price = $(byText("ფასი"),0),
     header_sum = $(byText("ფასი"),0),
-    quantity_input = $(".inputvalue"),
-    cart_plus_btn = $(".fa-plus"),
+            cart_plus_btn = $(".fa-plus"),
     cart_minus_button = $(".fa-minus"),
     cart_price = $(".prod_price",0),
     cart_x_btn=$(".delete_item"),
@@ -29,9 +28,6 @@ public class BasketPage {
     iur_person = $("#pis"),
     fiz_person = $("#iur"),
     sum_price = $(".fullPriceFor");
-
-
-
    public Double price_in_cart,
            summed_price;
 
