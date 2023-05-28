@@ -31,7 +31,7 @@ public class HomepageSteps extends HomepagePage {
     }
     @Step("wait for item added text")
     public HomepageSteps wait_add_cart_msg(){
-        addtocart_msg.shouldBe(Condition.visible,Duration.ofMillis(3000));
+        addtocart_msg.shouldBe(Condition.visible,Duration.ofMillis(2000));
         return this;
     }
 

@@ -25,6 +25,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send();
@@ -38,6 +39,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send();
@@ -51,6 +53,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send();
@@ -64,6 +67,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send();
@@ -77,6 +81,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send();
@@ -90,6 +95,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send();
@@ -103,6 +109,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send()
@@ -119,6 +126,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.setvalue_companyID(companyID_text);
@@ -132,6 +140,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.setvalue_companyID(companyID_less_digits)
@@ -147,6 +156,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.setvalue_companyID(companyID_more_digits)
@@ -161,6 +171,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send()
@@ -176,6 +187,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.setvalue_companyAddress(srch_cat)
@@ -190,6 +202,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.setvalue_companyPhone(srch_cat);
@@ -203,6 +216,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.setvalue_companyPhone(companyID_less_digits)
@@ -218,6 +232,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.setvalue_companyPhone(companyID_more_digits);
@@ -231,6 +246,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.setvalue_companyPhone(companyID_correct_digits)
@@ -246,6 +262,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send()
@@ -261,6 +278,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send()
@@ -276,6 +294,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send()
@@ -291,6 +310,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send()
@@ -306,6 +326,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send()
@@ -321,6 +342,7 @@ public class InvoiceTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
+        home_invoice.wait_add_cart_msg();
         basket_invoice.click_cart()
                 .cart_continue_click();
         invoiceSteps.click_send()

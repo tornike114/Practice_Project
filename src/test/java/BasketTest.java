@@ -22,7 +22,8 @@ public class BasketTest extends ChromeRunner {
         home_basket.click_search()
                 .srch_item(srch_product)
                 .srch_item_click()
-                .addtocart_click();
+                .addtocart_click()
+                .wait_add_cart_msg();
         basketsteps.click_cart();
         assertTrue(basketsteps.header_name.is(Condition.visible));
     }
@@ -33,7 +34,8 @@ public class BasketTest extends ChromeRunner {
         home_basket.click_search()
                 .srch_item(srch_product)
                 .srch_item_click()
-                .addtocart_click();
+                .addtocart_click()
+                .wait_add_cart_msg();
         basketsteps.click_cart();
         assertTrue(basketsteps.header_colour.is(Condition.visible));
     }
@@ -44,7 +46,8 @@ public class BasketTest extends ChromeRunner {
         home_basket.click_search()
                 .srch_item(srch_product)
                 .srch_item_click()
-                .addtocart_click();
+                .addtocart_click()
+                .wait_add_cart_msg();
         basketsteps.click_cart();
         assertTrue(basketsteps.header_code.is(Condition.visible));
     }
@@ -55,7 +58,8 @@ public class BasketTest extends ChromeRunner {
         home_basket.click_search()
                 .srch_item(srch_product)
                 .srch_item_click()
-                .addtocart_click();
+                .addtocart_click()
+                .wait_add_cart_msg();
         basketsteps.click_cart();
         assertTrue(basketsteps.header_quantity.is(Condition.visible));
     }
@@ -66,7 +70,8 @@ public class BasketTest extends ChromeRunner {
         home_basket.click_search()
                 .srch_item(srch_product)
                 .srch_item_click()
-                .addtocart_click();
+                .addtocart_click()
+                .wait_add_cart_msg();
         basketsteps.click_cart();
         assertTrue(basketsteps.header_price.is(Condition.visible));
     }
@@ -77,7 +82,8 @@ public class BasketTest extends ChromeRunner {
         home_basket.click_search()
                 .srch_item(srch_product)
                 .srch_item_click()
-                .addtocart_click();
+                .addtocart_click()
+                .wait_add_cart_msg();
         basketsteps.click_cart();
         assertTrue(basketsteps.header_sum.is(Condition.visible));
     }
@@ -88,7 +94,8 @@ public class BasketTest extends ChromeRunner {
         home_basket.click_search()
                 .srch_item(srch_product)
                 .srch_item_click()
-                .addtocart_click();
+                .addtocart_click()
+                .wait_add_cart_msg();
         basketsteps.click_cart()
                 .save_price()
                 .increase_quantity()
@@ -103,7 +110,8 @@ public class BasketTest extends ChromeRunner {
         home_basket.click_search()
                 .srch_item(srch_product)
                 .srch_item_click()
-                .addtocart_click();
+                .addtocart_click()
+                .wait_add_cart_msg();
         basketsteps.click_cart()
                 .save_price()
                 .increase_quantity()
@@ -119,7 +127,8 @@ public class BasketTest extends ChromeRunner {
         home_basket.click_search()
                 .srch_item(srch_product)
                 .srch_item_click()
-                .addtocart_click();
+                .addtocart_click()
+                .wait_add_cart_msg();
         basketsteps.click_cart()
                 .del_itm_cart()
                 .wait_item_disappear();
@@ -133,7 +142,9 @@ public class BasketTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
-        basketsteps.adding_second_item_to_cart()
+        basketsteps.adding_second_item_to_cart();
+        home_basket.wait_add_cart_msg();
+        basketsteps.click_cart()
                 .click_cart()
                 .clear_cart();
         assertTrue(basketsteps.item_in_cart.is(Condition.disappear));
@@ -146,8 +157,9 @@ public class BasketTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
-        basketsteps.adding_second_item_to_cart()
-                .click_cart()
+        basketsteps.adding_second_item_to_cart();
+        home_basket.wait_add_cart_msg();
+        basketsteps.click_cart()
                 .clear_cart()
                 .wait_item_disappear();
         assertTrue(basketsteps.cart_empty_text.is(Condition.visible));
@@ -160,8 +172,9 @@ public class BasketTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
-        basketsteps.adding_second_item_to_cart()
-                .click_cart()
+        basketsteps.adding_second_item_to_cart();
+        home_basket.wait_add_cart_msg();
+        basketsteps.click_cart()
                 .clear_cart()
                 .wait_item_disappear();
         assertTrue(basketsteps.cart_continue_btn.is(Condition.disappear));
@@ -174,8 +187,9 @@ public class BasketTest extends ChromeRunner {
                 .srch_item(srch_product)
                 .srch_item_click()
                 .addtocart_click();
-        basketsteps.adding_second_item_to_cart()
-                .click_cart()
+        basketsteps.adding_second_item_to_cart();
+        home_basket.wait_add_cart_msg();
+        basketsteps.click_cart()
                 .clear_cart()
                 .wait_item_disappear();
         assertTrue(basketsteps.cart_continue_btn.is(Condition.disappear));
@@ -187,7 +201,8 @@ public class BasketTest extends ChromeRunner {
         home_basket.click_search()
                 .srch_item(srch_product)
                 .srch_item_click()
-                .addtocart_click();
+                .addtocart_click()
+                .wait_add_cart_msg();
         basketsteps.click_cart()
                 .cart_continue_click()
                 .iur_fiz_fields();
